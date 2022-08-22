@@ -1,3 +1,19 @@
-<%= @question %>
-<%= @answer %>
-<%= link_to "Ask another question", ask_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-7 bg-primary bg-gradient p-3 text-end rounded-top fw-bold">
+      <%= @question %>
+    </div>
+    <div class="col-7 mb-3 bg-primary bg-gradient p-3 bg-opacity-25 text-end rounded-bottom">
+      <p class="fst-italic">-You</p>
+    </div>
+    <div class="col-7 bg-success bg-gradient p-3 rounded-top fw-bold">
+      <%= @answer %>
+    </div>
+    <div class="col-7 mb-3 bg-success bg-gradient p-3 bg-opacity-25 rounded-bottom">
+      <p class="fst-italic">-Your coach</p>
+    </div>
+    <div class="col-12 mb-3 link">
+      <%= link_to "Ask another question", ask_path %>
+    </div>
+  </div>
+</div>
